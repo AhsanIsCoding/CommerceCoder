@@ -1,0 +1,80 @@
+/* home section */
+.top{
+    text-align: center;
+}
+.navbar ul li a{
+    font-size: 12px;
+    margin-left: 25px;
+}
+#home span h1{
+    color: black;
+    display:inline;
+    width: 150px;
+    font-size: 50px;
+}
+.top p{
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    margin: 20px auto;
+    color: black;
+}
+/* projects section */
+
+#container{
+    margin: 40px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+#container::before{
+    height: 850px;
+}
+#project h1{
+    margin: 20px 50px 0 50px;
+    display: inline;
+}
+.box{
+    margin: 30px 10px;
+}
+/* skills section */
+#skills h2{
+    display: inline;
+    font-size: 2rem;
+    text-align: center;
+}
+.boxes
+{   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3);   
+    justify-content: center;
+    align-items: center;    
+}
+.skill-para{
+    color: orange;
+    margin: 0 auto 10px auto;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+
+}
+.skill-para i{
+    font-size: 50px;
+}
+/* contact section */
+#contact{
+    font-size: 18px;
+    font-weight: bold;
+    height: 100px;
+}
+.socials{
+    margin: 0 15px;
+
+}
+
+
+
+/* footer section */
+footer{
+    font-size: 18px;
+}

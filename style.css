@@ -1,0 +1,238 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* top section */
+.top{
+    background: url(img/sky.jpg) no-repeat center/cover ;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.5rem;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+
+    
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    
+
+}
+.navbar ul li a{
+    padding: 2px;
+    margin-left:30px;
+    font-size: 20px; 
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;;
+    
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+    text-shadow: .8px .8px 4px grey;
+}
+.top span h1{
+    transform: scale(1.5);
+    color:  white;
+    text-shadow: 2px 2px 4px rgb(61, 61, 61);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    
+}
+.top p{
+    margin: 20px;
+    color: grey;
+    text-shadow: 1px 1px 4px black;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 60px;
+    text-align: center;
+}
+.top p:hover{
+    cursor: pointer;
+}
+/* My Work section */
+#project{
+    text-align: center;
+}
+#project h1{
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 3rem;
+    margin: 40px 500px 0px 500px;
+    color:  grey;
+    
+}
+#project h1:hover{
+    transform: scale(1.5);
+    text-shadow: 2px 2px 4px black;
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px 0px 0px ;
+}
+#container::before{
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: url(img/darksky.jpg)no-repeat center center/cover;
+    z-index: -1;
+    box-sizing: border-box;
+}
+.box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 4px  rgb(0, 0, 46); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    background-color:  rgb(214, 213, 213);
+    position: relative;
+    border-radius: 50%;
+}
+img:hover{
+    cursor: pointer;
+    animation: shine .5s ease-in-out 0s 1 alternate forwards;
+}
+
+@keyframes shine{
+    0%{
+        
+        transform:scale(1);
+        border-radius: 50%;
+    }
+    20%{
+        
+        transform: scale(1.2);
+        border-radius: 10%;
+    }
+    50%{
+        transform: scale(1.4);
+        border-radius: 10%;
+        
+    }
+    60%{
+        transform:scale(1.6);
+        border-radius: 10%;
+    }
+    70%{
+        transform:scale(1.5);
+        border-radius: 10%;
+        
+    }
+    80%{
+        transform:scale(1.5);
+        border-radius: 10%;
+        
+    }
+    100%{
+        border-radius: 10%;
+        transform: scale(1.4);
+
+    }
+}
+/* skills section */
+#skills{
+    background-color: rgb(0, 0, 46);
+    height: 450px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+#skills h2{
+    width: 500px;
+    margin: 0px;
+}
+.boxes
+{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    justify-content: center;
+    align-items: center;    
+}
+
+#skills h2{
+    transform: scale(1.5);
+    font-size: 2.4rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color:  white;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.skill-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: orange;
+    border: 4px solid orangered;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.skill-para i{
+    font-size: 150px;
+}
+/* contact section */
+#contact{
+    height: 150px;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: url(img/sky.jpg)no-repeat center center/cover;
+}
+.socials{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.socials:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.socials a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+    /* footer section */
+    footer{
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-size: 20px;
+    }
